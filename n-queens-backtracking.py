@@ -12,7 +12,7 @@ def timer(func):
     return wrapper
 
 
-class BruteForceNQueens:
+class BacktrackNQueens:
     def __init__(self, N):
         self.N = N
         self.board = [[0 for x in range(N)] for y in range(N)]
@@ -55,5 +55,5 @@ class BruteForceNQueens:
 
 if __name__ == "__main__":
     for i in range(8,16):
-        solver = BruteForceNQueens(i)
+        solver = BacktrackNQueens(i)
         solver.run()

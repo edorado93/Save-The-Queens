@@ -12,7 +12,7 @@ def timer(func):
     return wrapper
 
 
-class BruteForceNQueensOptimizedSafetyCheck:
+class BacktrackingNQueensOptimizedSafetyCheck:
     def __init__(self, N):
         self.diagonals = {}
         self.anti_diagonals = {}
@@ -67,5 +67,5 @@ class BruteForceNQueensOptimizedSafetyCheck:
 
 if __name__ == "__main__":
     for i in range(8, 16):
-        solver = BruteForceNQueensOptimizedSafetyCheck(i)
+        solver = BacktrackingNQueensOptimizedSafetyCheck(i)
         solver.run()
